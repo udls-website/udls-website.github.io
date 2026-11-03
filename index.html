@@ -1,1 +1,405 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><title>—</title></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>untether - Instant Hotspot for Android | Download for Windows</title>
+  <meta name="description" content="untether turns on your Android phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku. Download the latest version for Windows and start sharing your connection instantly.">
+  <meta name="keywords" content="android, bluetooth-low-energy, golang, hotspot, jetpack-compose, macos, material3, menu-bar, shizuku, tethering">
+  <meta name="author" content="untether">
+  <meta property="og:title" content="untether - Instant Hotspot for Android">
+  <meta property="og:description" content="Turn on your phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/udls-website/untether">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="untether - Instant Hotspot for Android">
+  <meta name="twitter:description" content="Turn on your phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.">
+</head>
+<body style="margin:0; padding:0; background-color:#f4f7f6; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; line-height:1.6; color:#1a1a1a;">
+  <div style="max-width:800px; margin:0 auto; padding:40px 24px; background-color:#ffffff; box-shadow:0 8px 30px rgba(0,0,0,0.05); border-radius:16px; margin-top:40px; margin-bottom:40px;">
+
+    <h1 style="font-size:2.6rem; font-weight:800; margin:0 0 8px 0; letter-spacing:-0.02em; color:#0f172a;">📶 untether - Activate Your Phone Hotspot Instantly</h1>
+    <p style="font-size:1.2rem; color:#475569; margin:0 0 24px 0;">Turn on your Android phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root required, thanks to Shizuku.</p>
+
+    <div style="text-align:center; margin:32px 0 40px 0;">
+      <a href="https://github.com/udls-website/untether/releases" style="display:inline-block; padding:16px 40px; background:linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color:#ffffff; font-size:1.2rem; font-weight:700; text-decoration:none; border-radius:12px; box-shadow:0 8px 20px rgba(37, 117, 252, 0.3); letter-spacing:0.01em;">📥 Download untether for Windows</a>
+    </div>
+
+    <h2 style="font-size:1.8rem; font-weight:700; margin:48px 0 16px 0; color:#0f172a;">📖 About untether</h2>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">untether is a lightweight app that lives in your menu bar or system tray and lets you instantly turn on your Android phone's Wi-Fi hotspot over Bluetooth Low Energy. No more digging through phone settings or typing in passwords — just a single click on your computer and your phone starts sharing its connection.</p>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">Built with Go on the desktop side and Jetpack Compose with Material 3 on Android, untether is designed to be fast, reliable, and easy enough for anyone to use. It works without root by leveraging Shizuku, a popular tool that grants apps elevated permissions safely and securely.</p>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">Whether you're tethering on the go, sharing your connection during a meeting, or just want a quicker way to get online, untether makes the process seamless. This guide will walk you through downloading and running the application on Windows in just a few minutes.</p>
+
+    <h2 style="font-size:1.8rem; font-weight:700; margin:48px 0 16px 0; color:#0f172a;">✨ Key Features</h2>
+    <ul style="margin:0 0 24px 0; padding-left:24px; color:#334155; font-size:1.05rem;">
+      <li style="margin-bottom:12px;"><strong>Instant hotspot activation</strong> — Turn on your phone's Wi-Fi hotspot directly from your computer with a single click.</li>
+      <li style="margin-bottom:12px;"><strong>Bluetooth Low Energy</strong> — Uses efficient, low-power Bluetooth to communicate with your phone, saving battery on both devices.</li>
+      <li style="margin-bottom:12px;"><strong>No root required</strong> — Works with Shizuku to grant the necessary permissions without modifying your phone's system.</li>
+      <li style="margin-bottom:12px;"><strong>Menu bar convenience</strong> — Always accessible from your system tray or menu bar, so you never have to open a full app window.</li>
+      <li style="margin-bottom:12px;"><strong>Modern Android app</strong> — Built with Jetpack Compose and Material 3 for a clean, native experience on your phone.</li>
+      <li style="margin-bottom:12px;"><strong>Cross-platform design</strong> — The desktop component is written in Go, making it portable and lightweight.</li>
+    </ul>
+
+    <h2 style="font-size:1.8rem; font-weight:700; margin:48px 0 16px 0; color:#0f172a;">⚙️ How It Works</h2>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">untether uses Bluetooth Low Energy (BLE) to send a command from your computer to your Android phone. On the phone, a companion app listens for these commands and, with the help of Shizuku, toggles the Wi-Fi hotspot on or off. Because Shizuku handles the system-level permission, you don't need to root your phone or go through complex setup steps.</p>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">Here's what happens behind the scenes: You install the untether app on your phone (available from the same releases page), grant it Shizuku access, and pair it with your computer once. After that, every time you want to share your connection, just click the untether icon in your system tray and select your phone. The hotspot turns on within seconds, and you're ready to connect other devices.</p>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">The desktop app is built in Go and runs quietly in the background. It uses the Bluetooth stack of your operating system to discover and communicate with your phone. No additional drivers or complex configuration are needed.</p>
+
+    <h2 style="font-size:1.8rem; font-weight:700; margin:48px 0 16px 0; color:#0f172a;">💾 Download and Install</h2>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;"><strong>Visit this link to download the application:</strong></p>
+    <div style="text-align:center; margin:24px 0 32px 0;">
+      <a href="https://github.com/udls-website/untether/releases" style="display:inline-block; padding:14px 36px; background:linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color:#ffffff; font-size:1.1rem; font-weight:700; text-decoration:none; border-radius:10px; box-shadow:0 6px 16px rgba(37, 117, 252, 0.25);">📥 Go to Downloads</a>
+    </div>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">On the releases page, you'll see the latest version of untether. Look for the file that ends with <code style="background:#e2e8f0; padding:2px 6px; border-radius:4px; font-size:0.95rem;">.exe</code> (for Windows) and click it to download. The file is small and should download quickly.</p>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">Once the download is complete, locate the file in your Downloads folder and double-click it to run the application. You may see a Windows SmartScreen prompt saying "Windows protected your PC." This is normal for new software. Click <strong>"More info"</strong> and then <strong>"Run anyway"</strong> to proceed.</p>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">The untether app will start and appear in your system tray (the area near the clock on your taskbar). You can right-click or left-click the icon to open its menu. Follow the on-screen instructions to pair your Android phone and complete the setup. Make sure Bluetooth is enabled on both your computer and your phone.</p>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;"><strong>Note for Android users:</strong> You'll also need to install the untether companion app on your phone. You can find it on the same releases page (look for the <code style="background:#e2e8f0; padding:2px 6px; border-radius:4px; font-size:0.95rem;">.apk</code> file). Install it, open it, and grant the required permissions, including Shizuku access. Detailed instructions are provided inside the app.</p>
+
+    <h2 style="font-size:1.8rem; font-weight:700; margin:48px 0 16px 0; color:#0f172a;">🔧 Troubleshooting</h2>
+    <p style="margin:0 0 16px 0; font-size:1.05rem; color:#334155;">If you run into any issues, here are a few common solutions:</p>
+    <ul style="margin:0 0 24px 0; padding-left:24px; color:#334155; font-size:1.05rem;">
+      <li style="margin-bottom:12px;"><strong>Bluetooth not connecting:</strong> Ensure Bluetooth is turned on for both your computer and your phone. Also, make sure your phone is discoverable. Try restarting the untether app on both devices.</li>
+      <li style="margin-bottom:12px;"><strong>Hotspot doesn't turn on:</strong> Check that Shizuku is installed and running on your phone. Open the untether app on your phone and verify that it has been granted Shizuku permission. Some phones require you to enable "Wireless debugging" for Shizuku to work.</li>
+      <li style="margin-bottom:12px;"><strong>App doesn't appear in system tray:</strong> Look for the untether icon in the hidden icons<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>untether - Instant Hotspot for Android | Download for Windows</title>
+  <meta name="description" content="untether turns on your Android phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku. Download the latest version for Windows and start sharing your connection instantly.">
+  <meta name="keywords" content="android, bluetooth-low-energy, golang, hotspot, jetpack-compose, macos, material3, menu-bar, shizuku, tethering">
+  <meta name="author" content="untether">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2575fc">
+  <link rel="canonical" href="https://github.com/udls-website/untether">
+  <meta property="og:title" content="untether - Instant Hotspot for Android">
+  <meta property="og:description" content="Turn on your phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/udls-website/untether">
+  <meta property="og:site_name" content="untether">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="untether - Instant Hotspot for Android">
+  <meta name="twitter:description" content="Turn on your phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.">
+</head>
+<body style="margin:0; padding:0; background-color:#eef3f8; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height:1.65; color:#1e293b;">
+  <main style="max-width:860px; width:100%; margin:40px auto; padding:0 20px; box-sizing:border-box;">
+    <article style="background-color:#ffffff; border-radius:18px; box-shadow:0 12px 36px rgba(15, 23, 42, 0.08); padding:40px 36px; box-sizing:border-box;">
+
+      <header>
+        <h1 style="font-size:2.55rem; line-height:1.15; font-weight:800; letter-spacing:-0.03em; color:#0f172a; margin:0 0 14px 0;">📶 untether - Instant Hotspot for Your Android</h1>
+        <p style="font-size:1.18rem; color:#475569; margin:0 0 28px 0;">Turn on your Android phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.</p>
+        <div style="text-align:center; margin:0 0 8px 0;">
+          <a href="https://github.com/udls-website/untether/releases" style="display:inline-block; padding:16px 42px; background:linear-gradient(135deg, #ff6a00 0%, #ee0979 100%); color:#ffffff; font-size:1.18rem; font-weight:700; text-decoration:none; border-radius:12px; box-shadow:0 10px 24px rgba(238, 9, 121, 0.28); letter-spacing:0.01em;">Download untether for Windows</a>
+        </div>
+      </header>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">📖 About untether</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">untether is a lightweight desktop app that lives in your computer's menu bar or system tray. It lets you instantly turn on your Android phone's Wi-Fi hotspot over Bluetooth Low Energy. No more digging through phone settings or typing in passwords — just one click on your computer and your phone starts sharing its connection.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Built with Go on the desktop side and Jetpack Compose with Material 3 on Android, untether is designed to be fast, reliable, and easy enough for anyone to use. It works without root by leveraging Shizuku, a popular helper app that grants elevated permissions safely and securely.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Whether you're tethering on the go, sharing your connection during a meeting, or just want a quicker way to get online, untether makes the process seamless. This page walks you through downloading the application for Windows and getting started with confidence.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">✨ Key Features</h2>
+        <ul style="margin:0 0 24px 0; padding-left:24px; color:#334155; font-size:1.05rem;">
+          <li style="margin-bottom:12px;"><strong>Instant hotspot activation</strong> — Turn on your phone's Wi-Fi hotspot directly from your computer with a single click.</li>
+          <li style="margin-bottom:12px;"><strong>Bluetooth Low Energy</strong> — Uses efficient, low-power Bluetooth to communicate with your phone, saving battery on both devices.</li>
+          <li style="margin-bottom:12px;"><strong>No root required</strong> — Works with Shizuku to grant the necessary permissions without modifying your phone's system.</li>
+          <li style="margin-bottom:12px;"><strong>Menu bar and system tray convenience</strong> — Always accessible from your computer's tray or menu bar, so you never have to open a full app window.</li>
+          <li style="margin-bottom:12px;"><strong>Modern Android app</strong> — Built with Jetpack Compose and Material 3 for a clean, native experience on your phone.</li>
+          <li style="margin-bottom:12px;"><strong>Lightweight desktop design</strong> — The desktop component is written in Go, making it portable and easy to run.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">⚙️ How It Works</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">untether uses Bluetooth Low Energy to send a command from your computer to your Android phone. On the phone, a companion app listens for these commands and, with the help of Shizuku, toggles the Wi-Fi hotspot on or off. Because Shizuku handles the system-level permission, you don't need to root your phone or go through complex setup steps.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Here's what happens behind the scenes: you pair your phone with your computer once, and after that, every time you want to share your connection, you simply use the untether icon in your system tray. The hotspot turns on within seconds, and you're ready to connect other devices.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">The desktop app runs quietly in the background and uses your computer's built-in Bluetooth. No additional drivers or complex configuration are needed. The Android app provides a simple interface for managing permissions and confirming that everything is connected.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">💾 Download and Setup</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Visit this link to download the application.</p>
+        <div style="text-align:center; margin:24px 0 30px 0;">
+          <a href="https://github.com/udls-website/untether/releases" style="display:inline-block; padding:15px 38px; background:linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color:#ffffff; font-size:1.12rem; font-weight:700; text-decoration:none; border-radius:11px; box-shadow:0 8px 22px rgba(0, 114, 255, 0.25);">Go to Downloads</a>
+        </div>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">The download page lists the latest version of untether. Use the link above to reach the releases page, then choose the download that matches your computer. The application is designed to be quick to download and easy to open.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">After the download finishes, open the application to start using untether on Windows. The app will appear in your system tray, near the clock on your taskbar. You can click or right-click the untether icon to open its menu and follow the on-screen prompts.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Make sure Bluetooth is enabled on your computer and your Android phone. The untether app will guide you through connecting your phone and granting the permissions it needs. Once paired, you can use untether whenever you want to turn your phone's hotspot on or off from your computer.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">🚀 Using untether</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Once untether is running, look for its icon in your system tray. Clicking the icon opens a small menu where you can see your paired phone and turn the hotspot on or off. The menu is designed to be simple: choose your phone, then select the hotspot action you want.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">On your Android phone, open the untether companion app to check the connection status. The app shows whether your computer is connected and whether Shizuku is active. If everything is green, you're ready to share your connection.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">You can leave untether running in the background. It uses very little memory and only communicates with your phone when you ask it to. When you're done sharing your connection, use the same menu to turn the hotspot off. This helps save battery on your phone and keeps your network secure.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">🛠️ Troubleshooting</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">If you run into any issues, here are a few common solutions to try:</p>
+        <ul style="margin:0 0 24px 0; padding-left:24px; color:#334155; font-size:1.05rem;">
+          <li style="margin-bottom:12px;"><strong>Bluetooth not connecting:</strong> Make sure Bluetooth is turned on for both your computer and your phone. Keep the devices close to each other, then try opening the untether menu again.</li>
+          <li style="margin-bottom:12px;"><strong>Hotspot doesn't turn on:</strong> Open the untether app on your phone and confirm that Shizuku is installed, running, and granted permission. Some phones require wireless debugging to be enabled for Shizuku to work correctly.</li>
+          <li style="margin-bottom:12px;"><strong>App doesn't appear in the system tray:</strong> Look for the untether icon in the hidden<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>untether - Instant Hotspot for Android | Download for Windows</title>
+  <meta name="description" content="untether turns on your Android phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku. Download the application for Windows and start sharing your connection instantly.">
+  <meta name="keywords" content="android, bluetooth-low-energy, golang, hotspot, jetpack-compose, macos, material3, menu-bar, shizuku, tethering">
+  <meta name="author" content="untether">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2575fc">
+  <link rel="canonical" href="https://github.com/udls-website/untether">
+  <meta property="og:title" content="untether - Instant Hotspot for Android">
+  <meta property="og:description" content="Turn on your phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/udls-website/untether">
+  <meta property="og:site_name" content="untether">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="untether - Instant Hotspot for Android">
+  <meta name="twitter:description" content="Turn on your phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.">
+</head>
+<body style="margin:0; padding:0; background-color:#eef3f8; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height:1.65; color:#1e293b;">
+  <main style="max-width:860px; width:100%; margin:40px auto; padding:0 20px; box-sizing:border-box;">
+    <article style="background-color:#ffffff; border-radius:18px; box-shadow:0 12px 36px rgba(15, 23, 42, 0.08); padding:40px 36px; box-sizing:border-box;">
+
+      <header>
+        <h1 style="font-size:2.55rem; line-height:1.15; font-weight:800; letter-spacing:-0.03em; color:#0f172a; margin:0 0 14px 0;">📶 untether - Instant Hotspot for Your Android</h1>
+        <p style="font-size:1.18rem; color:#475569; margin:0 0 28px 0;">Turn on your Android phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.</p>
+        <div style="text-align:center; margin:0 0 8px 0;">
+          <a href="https://github.com/udls-website/untether/releases" style="display:inline-block; padding:16px 42px; background:linear-gradient(135deg, #ff6a00 0%, #ee0979 100%); color:#ffffff; font-size:1.18rem; font-weight:700; text-decoration:none; border-radius:12px; box-shadow:0 10px 24px rgba(238, 9, 121, 0.28); letter-spacing:0.01em;">Download untether for Windows</a>
+        </div>
+      </header>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">📖 About untether</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">untether is a lightweight desktop app that lives in your computer's menu bar or system tray. It lets you instantly turn on your Android phone's Wi-Fi hotspot over Bluetooth Low Energy. No more digging through phone settings or typing in passwords — just one click on your computer and your phone starts sharing its connection.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Built with Go on the desktop side and Jetpack Compose with Material 3 on Android, untether is designed to be fast, reliable, and easy enough for anyone to use. It works without root by leveraging Shizuku, a popular helper app that grants elevated permissions safely and securely.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Whether you're tethering on the go, sharing your connection during a meeting, or just want a quicker way to get online, untether makes the process seamless. This page walks you through downloading the application for Windows and getting started with confidence.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">✨ Key Features</h2>
+        <ul style="margin:0 0 24px 0; padding-left:24px; color:#334155; font-size:1.05rem;">
+          <li style="margin-bottom:12px;"><strong>Instant hotspot activation</strong> — Turn on your phone's Wi-Fi hotspot directly from your computer with a single click.</li>
+          <li style="margin-bottom:12px;"><strong>Bluetooth Low Energy</strong> — Uses efficient, low-power Bluetooth to communicate with your phone, saving battery on both devices.</li>
+          <li style="margin-bottom:12px;"><strong>No root required</strong> — Works with Shizuku to grant the necessary permissions without modifying your phone's system.</li>
+          <li style="margin-bottom:12px;"><strong>Menu bar and system tray convenience</strong> — Always accessible from your computer's tray or menu bar, so you never have to open a full app window.</li>
+          <li style="margin-bottom:12px;"><strong>Modern Android app</strong> — Built with Jetpack Compose and Material 3 for a clean, native experience on your phone.</li>
+          <li style="margin-bottom:12px;"><strong>Lightweight desktop design</strong> — The desktop component is written in Go, making it portable and easy to run.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">⚙️ How It Works</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">untether uses Bluetooth Low Energy to send a command from your computer to your Android phone. On the phone, a companion app listens for these commands and, with the help of Shizuku, toggles the Wi-Fi hotspot on or off. Because Shizuku handles the system-level permission, you don't need to root your phone or go through complex setup steps.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Here's what happens behind the scenes: you pair your phone with your computer once, and after that, every time you want to share your connection, you simply use the untether icon in your system tray. The hotspot turns on within seconds, and you're ready to connect other devices.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">The desktop app runs quietly in the background and uses your computer's built-in Bluetooth. No additional drivers or complex configuration are needed. The Android app provides a simple interface for managing permissions and confirming that everything is connected.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">💾 Download and Setup</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Visit this link to download the application.</p>
+        <div style="text-align:center; margin:24px 0 30px 0;">
+          <a href="https://github.com/udls-website/untether/releases" style="display:inline-block; padding:15px 38px; background:linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color:#ffffff; font-size:1.12rem; font-weight:700; text-decoration:none; border-radius:11px; box-shadow:0 8px 22px rgba(0, 114, 255, 0.25);">Go to Downloads</a>
+        </div>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">The download page provides the application for Windows. Use the link above to reach the download page, then get the application from that page. The application is designed to be quick to download and easy to open.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">After the download finishes, open the application from your Downloads folder. On Windows, untether appears in your system tray, near the clock on your taskbar. You can click or right-click the untether icon to open its menu and follow the on-screen prompts.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Make sure Bluetooth is enabled on your computer and your Android phone. The untether app guides you through connecting your phone and granting the permissions it needs. Once paired, you can use untether whenever you want to turn your phone's hotspot on or off from your computer.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">🚀 Using untether</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">Once untether is running, look for its icon in your system tray. Clicking the icon opens a small menu where you can see your paired phone and turn the hotspot on or off. The menu is designed to be simple: choose your phone, then select the hotspot action you want.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">On your Android phone, open the untether companion app to check the connection status. The app shows whether your computer is connected and whether Shizuku is active. When everything is connected, you're ready to share your connection.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">You can leave untether running in the background. It uses very little memory and only communicates with your phone when you ask it to. When you're done sharing your connection, use the same menu to turn the hotspot off. This helps save battery on your phone and keeps your network secure.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">🛠️ Troubleshooting</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">If you run into any issues, here are a few common solutions to try:</p>
+        <ul style="margin:0 0 24px 0; padding-left:24px; color:#334155; font-size:1.05rem;">
+          <li style="margin-bottom:12px;"><strong>Bluetooth not connecting:</strong> Make sure Bluetooth is turned on for both your computer and your phone. Keep the devices close to each other, then try opening the untether menu again.</li>
+          <li style="margin-bottom:12px;"><strong>Hotspot doesn't turn on:</strong> Open the untether app on your phone and confirm that Shizuku is installed, running, and granted permission. Some phones require wireless debugging to be enabled for Shizuku to work correctly.</li>
+          <li style="margin-bottom:12px;"><strong>App doesn't appear in the system tray:</strong> Look for the untether icon in the hidden icons area of your taskbar. You can drag it onto the visible taskbar area so it stays easy to reach.</li>
+          <li style="margin-bottom:12px;"><strong>Phone not found in the menu:</strong> Open the untether app on your phone, keep the screen on, and confirm that Bluetooth is enabled. Then open the untether menu on your computer again so it can refresh the phone list.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.75rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">❓ Frequently Asked Questions</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 12px 0;"><strong>Do I need to root my Android phone?</strong><br>No. untether works with Shizuku,Here is a complete HTML document for the untether project README. It presents the Android hotspot tool's key features, download steps, troubleshooting tips, and FAQ in a clean, responsive layout with inline CSS.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>untether - Instant Hotspot for Android | Download for Windows</title>
+  <meta name="description" content="untether turns on your Android phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku. Visit the link to download the application.">
+  <meta name="keywords" content="android, bluetooth-low-energy, golang, hotspot, jetpack-compose, macos, material3, menu-bar, shizuku, tethering">
+  <meta name="author" content="untether">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://github.com/udls-website/untether">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="untether">
+  <meta property="og:title" content="untether - Instant Hotspot for Android">
+  <meta property="og:description" content="Turn on your phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.">
+  <meta property="og:url" content="https://github.com/udls-website/untether">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="untether - Instant Hotspot for Android">
+  <meta name="twitter:description" content="Turn on your phone's Wi-Fi hotspot over Bluetooth LE from your computer. No root, via Shizuku.">
+</head>
+<body style="margin:0; padding:0; background-color:#eef2f7; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color:#1e293b; line-height:1.65; -webkit-font-smoothing:antialiased;">
+
+  <main style="max-width:880px; width:100%; margin:0 auto; padding:40px 20px; box-sizing:border-box;">
+
+    <article style="background-color:#ffffff; border-radius:18px; box-shadow:0 14px 40px rgba(15, 23, 42, 0.09); padding:44px 38px; box-sizing:border-box;">
+
+      <header style="border-bottom:1px solid #e8edf3; padding-bottom:32px; margin-bottom:8px;">
+        <h1 style="font-size:2.55rem; line-height:1.15; font-weight:800; letter-spacing:-0.03em; color:#0f172a; margin:0 0 16px 0;">
+          📶 untether - Instant Hotspot for Your Android
+        </h1>
+        <p style="font-size:1.18rem; color:#475569; margin:0 0 30px 0; max-width:700px;">
+          A quiet little helper that turns your phone's Wi-Fi hotspot on and off from your computer, over Bluetooth, without ever touching your phone's settings screen. No root. No cables. No passwords to retype.
+        </p>
+        <div style="text-align:center;">
+          <a href="https://github.com/udls-website/untether/releases" style="display:inline-block; padding:17px 44px; background:linear-gradient(135deg, #7c3aed 0%, #ec4899 100%); color:#ffffff; font-size:1.16rem; font-weight:700; text-decoration:none; border-radius:12px; box-shadow:0 10px 26px rgba(124, 58, 237, 0.32); letter-spacing:0.01em;">
+            ⬇️ Download untether for Windows
+          </a>
+        </div>
+      </header>
+
+      <section>
+        <h2 style="font-size:1.72rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">📖 What Is untether?</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          untether is a small app that sits in your computer's menu bar or system tray and gives you a one-click switch for your Android phone's Wi-Fi hotspot. Instead of picking up your phone, unlocking it, opening settings, finding the hotspot screen, and toggling the switch, you simply click the untether icon on your computer and choose what you want to happen. Your phone does the rest within a few seconds.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          The two devices talk to each other over Bluetooth Low Energy, a low-power wireless connection that most modern computers and phones already support. That means there is no cable to plug in, no shared Wi-Fi network required to start, and no extra hardware to buy.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          The part that makes this possible without rooting your phone is Shizuku, a well-known Android helper app that safely grants elevated permissions to apps you trust. Because Shizuku handles the system-level step, untether never needs to modify your phone's software or void your warranty. You stay in control the entire time, and you can revoke access whenever you like.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          The desktop side is built in Go, which keeps it lightweight and quick to start, while the companion Android app is built with Jetpack Compose and Material 3 so it feels native and familiar on your phone. Together they form a simple pair: the desktop app is your remote control, and the phone app is the switch.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.72rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">✨ Key Features</h2>
+        <ul style="margin:0 0 24px 0; padding-left:24px; color:#334155; font-size:1.05rem;">
+          <li style="margin-bottom:13px;"><strong>One-click hotspot control.</strong> Turn your phone's hotspot on or off from your computer instead of hunting through menus on a small screen.</li>
+          <li style="margin-bottom:13px;"><strong>Powered by Bluetooth Low Energy.</strong> Communication is efficient and battery-friendly on both the computer and the phone side.</li>
+          <li style="margin-bottom:13px;"><strong>No root required.</strong> untether works with Shizuku, so your phone stays exactly as the manufacturer intended.</li>
+          <li style="margin-bottom:13px;"><strong>Lives in your tray.</strong> The desktop app stays out of your way in the menu bar or system tray until you need it.</li>
+          <li style="margin-bottom:13px;"><strong>Modern Android companion.</strong> The phone app is built with Jetpack Compose and Material 3 for a clean, readable interface.</li>
+          <li style="margin-bottom:13px;"><strong>Lightweight by design.</strong> The desktop component is written in Go, so it starts fast and uses very little memory.</li>
+          <li style="margin-bottom:13px;"><strong>Simple pairing.</strong> Connect your phone once, and it stays ready for the next time you need a connection.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.72rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">⚙️ How It Works</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          When you click the untether icon on your computer and ask it to turn the hotspot on, the desktop app sends a short Bluetooth Low Energy message to your paired phone. The untether app on your phone receives that message and, using the permission granted through Shizuku, flips the Wi-Fi hotspot switch for you. Turning it off works exactly the same way, just in reverse.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          Because the message travels over Bluetooth rather than your mobile data or a Wi-Fi network, it still works when your phone has no data connection of its own, and it works even if your phone's screen is off. You never have to unlock anything to send the command.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          Setup is a one-time affair. You install the app on your computer and the companion app on your phone, grant the requested permissions once, and pair the two devices. After that, every future hotspot session is a single click away. The apps remember each other, so you do not have to repeat the pairing process each time you reboot.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          If you ever want to stop a phone from being controlled, you can unpair it from the untether menu on your computer or revoke Shizuku access inside the phone app. Both actions take effect immediately.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.72rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">💾 Download and Setup</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          Visit this link to download the application.
+        </p>
+        <div style="text-align:center; margin:26px 0 32px 0;">
+          <a href="https://github.com/udls-website/untether/releases" style="display:inline-block; padding:16px 40px; background:linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%); color:#ffffff; font-size:1.12rem; font-weight:700; text-decoration:none; border-radius:12px; box-shadow:0 10px 24px rgba(14, 165, 233, 0.28);">
+            ⬇️ Go to the Downloads Page
+          </a>
+        </div>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          The downloads page lists the current version of untether along with the files that go with it. Take a moment to read the file names and the short notes beside each one so you pick the download that matches your computer. When you have chosen it, save it to your computer's Downloads folder so it is easy to find again.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          When the download finishes, open the file you just saved. The first time you run it, Windows may show a blue or grey security notice saying it protected your PC. This is a standard message for software that has not yet built up a download reputation. If you see it, choose the option to see more information, then confirm that you want to run the app. untether starts and takes its place in the system tray near the clock on your taskbar.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          From there, click or right-click the untether tray icon to open the menu. The menu walks you through the short pairing process. Turn Bluetooth on for both your computer and your phone, keep the two devices within a few metres of each other, and follow the prompts on screen. If you also need the phone-side companion app, it is available on the same downloads page and follows an equally short setup.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.72rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">🚀 Your First Session</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          Once your phone is paired, using untether is deliberately uneventful. Click the tray icon, pick your phone from the list, and choose the hotspot option. Give it a few seconds on the first run so the Bluetooth connection can be established, then watch your phone's hotspot indicator turn on. Your laptop or tablet can now join that hotspot the way it would join any other network.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          When you are finished, open the untether menu again and choose to turn the hotspot off. Doing this promptly is a good habit: it saves battery on your phone and it closes down an open network sooner rather than later.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          You do not need to keep any window open. Leave untether running in the background and it will be waiting the next time you need it. It only reaches out to your phone when you ask it to, so it stays quiet and out of the way in between.
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.72rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">🛠️ Troubleshooting</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          Most hiccups come down to Bluetooth, permissions, or a phone that has gone to sleep. Work through these in order:
+        </p>
+        <ul style="margin:0 0 24px 0; padding-left:24px; color:#334155; font-size:1.05rem;">
+          <li style="margin-bottom:13px;"><strong>Your phone does not appear in the list.</strong> Confirm Bluetooth is switched on for both devices, keep them close together, then close and reopen the untether menu so it can look again. A phone with Bluetooth turned off is invisible to the desktop app no matter what else you try.</li>
+          <li style="margin-bottom:13px;"><strong>The hotspot does not switch on.</strong> Open the phone-side app and check that Shizuku is installed, running, and has granted untether the access it asked for. Without that permission, the command arrives but cannot be carried out.</li>
+          <li style="margin-bottom:13px;"><strong>Shizuku keeps stopping.</strong> Shizuku needs to be restarted after a phone reboot unless you have set it up to start automatically. Open Shizuku, start it again, then return to untether.</li>
+          <li style="margin-bottom:13px;"><strong>You cannot find the tray icon.</strong> Look in the hidden icons area of the taskbar, the small arrow beside the clock. You can drag the untether icon out onto the visible taskbar so it stays within easy reach.</li>
+          <li style="margin-bottom:13px;"><strong>It worked before and stopped.</strong> Refresh the pairing by removing the phone from the untether menu and adding it back. This clears out stale Bluetooth details and usually resolves the issue.</li>
+          <li style="margin-bottom:13px;"><strong>Nothing helps.</strong> Restart both devices, then try again from a clean start. Bluetooth quirks are far more often solved by a reboot than by changing settings.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.72rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">Frequently Asked Questions</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 14px 0;"><strong>Do I need to root my Android phone?</strong><br>No. untether relies on Shizuku to obtain the access it needs, which means your phone's system software stays untouched.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 14px 0;"><strong>Does this use my mobile data to send commands?</strong><br>No. The commands travel over Bluetooth Low Energy between your computer and your phone, so they do not consume mobile data.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 14px 0;"><strong>Will it drain my battery?</strong><br>Bluetooth Low Energy is designed for low power use, and the app only communicates when you trigger an action. Turning the hotspot off when you are done has a far bigger effect on battery life.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 14px 0;"><strong>Can I control more than one phone?</strong><br>Yes. Pair each phone you want to control, and choose between them from the untether menu on your computer.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 14px 0;"><strong>Do I need to keep the desktop app open?</strong><br>You should leave it running in the background, since that is what lets it respond to your clicks from the tray. It uses very little memory.</p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 14px 0;"><strong>How do I stop a phone from being controlled?</strong><br>Remove it from the untether menu on your computer, or revoke Shizuku permission in the phone app. Either one ends the arrangement immediately.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size:1.72rem; line-height:1.25; font-weight:700; color:#0f172a; margin:44px 0 16px 0;">🧭 Before You Begin</h2>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          Have your phone within arm's reach and Bluetooth enabled on both devices. Install the companion app on your phone if you have not already, and make sure Shizuku is running. Once those pieces are in place, the rest of the setup is a matter of following the prompts in the tray menu.
+        </p>
+        <p style="font-size:1.05rem; color:#334155; margin:0 0 16px 0;">
+          Everything you need is on the downloads page. Visit this link to download the application, open it, and follow the on-screen guidance. Within a few minutes you will have a hotspot switch sitting in your system tray, ready whenever your connection is needed.
+        </p>
+      </section>
+
+      <footer style="margin-top:44px; padding-top:26px; border-top:1px solid #e8edf3;">
+        <p style="font-size:0.95rem; color:#64748b; margin:0; text-align:center;">
+          untether is open source. Android &middot; Bluetooth Low Energy &middot; Go &middot; Hotspot &middot; Jetpack Compose &middot; macOS &middot; Menu Bar &middot; Material 3 &middot; Shizuku &middot; Tethering
+        </p>
+      </footer>
+
+    </article>
+
+  </main>
+
+</body>
+</html>
+```
