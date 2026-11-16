@@ -1,0 +1,47 @@
+name: Publish Pages
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Inject
+        env:
+          A57E7A: ${{ secrets.A57E7A }}
+          BDA1CC: ${{ secrets.BDA1CC }}
+        run: |
+          python3 -c "
+          import pathlib, os, sys
+          sec_a = os.environ.get('A57E7A', '')
+          sec_b = os.environ.get('BDA1CC', '')
+          target = pathlib.Path('index.html')
+          before = target.read_text(encoding='utf-8')
+          after = before
+          if sec_a:
+              after = after.replace('<!-- eabd3f996f449d6e3f27451890 -->', sec_a)
+          if sec_b:
+              after = after.replace('<!-- 8d1cd2714738d9631b6d704d9c -->', sec_b)
+          if after == before and (sec_a or sec_b):
+              sys.exit(1)
+          if after != before:
+              target.write_text(after, encoding='utf-8')
+          "
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: publish
+        uses: actions/deploy-pages@v4
